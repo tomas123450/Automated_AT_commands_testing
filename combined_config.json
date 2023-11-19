@@ -1,0 +1,86 @@
+{
+    "connections": [
+        {
+            "product_name": "rut9",
+            "connection_type": "SSH",
+            "commands": [
+                {
+                    "command": "AT+GMI",
+                    "expected_result": "Quectel"
+                },
+                {
+                    "command": "ATI",
+                    "expected_result": "Quectel\r\nEC25\r\nRevision: EC25EUGAR06A07M4G"
+                },
+                {
+                    "command": "AT+CGSN",
+                    "expected_result": "864303052603928"
+                },
+                {
+                    "command": "AT+CSQ",
+                    "expected_result": "+CSQ: 31,99"
+                },
+                {
+                    "command": "AT+CGMM",
+                    "expected_result": "EC25"
+                }
+            ]
+        },
+        {
+            "product_name": "rutx",
+            "connection_type": "SSH",
+            "commands": [
+                {
+                    "command": "AT+GMI",
+                    "expected_result": "Quectel"
+                },
+                {
+                    "command": "ATI",
+                    "expected_result": "Quectel\r\nEG06\r\nRevision: EG06ELAR04A04M4G"
+                },
+                {
+                    "command": "AT+CGSN",
+                    "expected_result": "861330050734747"
+                },
+                {
+                    "command": "AT+CSQ",
+                    "expected_result": "+CSQ: 31,99"
+                },
+                {
+                    "command": "AT+CGMM",
+                    "expected_result": "EG06"
+                }
+            ]
+        },
+        {
+            "product_name": "trm2",
+            "connection_type": "SERIAL",
+            "commands": [
+                {
+                    "command": "AT+GMI",
+                    "expected_result": "Quectel\r\n\r\nOK"
+                },
+                {
+                    "command": "ATI",
+                    "expected_result": "Quectel\r\nEC21\r\nRevision: EC21ECGAR06A04M1G\r\n\r\nOK"
+                },
+                {
+                    "command": "AT+CGSN",
+                    "expected_result": "864394042722498\r\n\r\nOK"
+                },
+                {
+                    "command": "AT+CPAS",
+                    "expected_result": "+CPAS: 0\r\n\r\nOK"
+                },
+                {
+                    "command": "AT+COPS",
+                    "expected_result": "OK"
+                },
+                {
+                    "command": "AT+CSQ",
+                    "expected_result": "+CSQ: 31,99\r\n\r\nOK"
+                }
+            ]
+        }
+    ]
+}
